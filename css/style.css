@@ -170,6 +170,35 @@ main .main__about{
 	margin: 0 40px;
 }
 
+.services_row {
+	text-align: center;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 20px;
+
+}
+.main__services h1 {
+	text-align: center;
+	padding: 100px 0 32px 0;
+	font-size: 44px;
+}
+
+.main__services p {
+	text-align: center;
+	color: #6c6c6c;
+	margin-bottom: 100px;
+}
+
+.services_row h4 {
+	padding-top: 30px;
+	text-transform: uppercase;
+}
+
+.services_row p {
+	padding-top: 21px;
+}
+
+
 
 @media screen and (max-width: 1300px){
 	nav {
@@ -249,5 +278,8 @@ main .main__about{
 	}
 	.team__card {
 		flex-direction: column;
+	}
+	.services_row {
+		grid-template-columns: auto;
 	}
 }
