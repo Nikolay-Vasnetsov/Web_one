@@ -201,23 +201,40 @@ main .main__about{
 .main__clients {
 	background: #000;
 	color: #fff;
+	padding: 100px 0 205px 0;
+	text-align: center;
 }
 
 .main__clients h1 {
-	font-size: 44px;
-	padding: 90px 0 25px 0;
+	margin-bottom: 30px;
+}
+
+.main__clients img {
+	margin-left: 30px;
+	margin-top: 10px;
+}
+
+.main__testimonials {
+	padding: 100px 0 175px 0;
+	background: #000;
+	color: #fff;
 	text-align: center;
 }
 
-.clients {
-	margin: 110px 0 110px 0;
-	text-align: center;
+.main__testimonials h1 {
+	text-transform: uppercase;
+	margin-bottom: 25px;
 }
 
-.clients img {
-	margin-left: 32px;
+.testimonials_p1 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 50px;
 }
 
+.testimonials_p2 {
+	font-size: 18px;
+}
 
 @media screen and (max-width: 1300px){
 	nav {
