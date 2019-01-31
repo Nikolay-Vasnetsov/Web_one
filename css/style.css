@@ -131,12 +131,26 @@ main .main__about{
 	text-transform: uppercase;
 }
 
-.line {
+/*.line {
 	width: 100px;
 	height: 3px;
 	background: #fcac45;
 	margin: 0 auto;
 	margin-bottom: 85px;
+}*/
+
+h1:after {
+	content: "";
+	display: block;
+	border-bottom: 3px solid #fcac45;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 80px;
+	width: 100px;
+}
+
+.main__welcome h1:after, .main__about h1:after{
+	display: none;
 }
 
 .photo {
@@ -253,6 +267,80 @@ main .main__about{
 
 .main__work img:hover {
 	box-shadow: 0 0 20px rgba(0,0,0.7);
+}
+
+.contact_wrapper {
+	width: 753px;
+	margin: 0 auto;
+	padding: 100px 0 100px 0;
+}
+
+input {
+	width: 360px;
+	height: 40px;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.red {
+	color: red;
+}
+
+.form_inputs {
+	display: flex;
+}
+
+input:first-of-type {
+	margin-right: 23px;
+}
+
+textarea {
+	width: 100%;
+	height: 163px;
+	margin-bottom: 20px;
+}
+
+input, textarea {
+	border: 1px solid #999999;
+	margin-top: 5px;
+}
+
+.buttom_block {
+	display: flex;
+	justify-content: flex-end;
+}
+
+input[type=submit] {
+	width: 165px;
+	height: 40px;
+	background: #fcac45;
+	color: #fff;
+	margin-right: 0;
+	border: none;
+	cursor: pointer;
+}
+
+.main__contact h1 {
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.pcontent {
+	text-align: center;
+}
+
+.main__contact p {
+	color: #636363;
+}
+
+form {
+	margin-top: 80px;
+}
+
+footer {
+	height: 92px;
+	background: #222222;
 }
 
 @media screen and (max-width: 1366px) {
