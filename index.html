@@ -1,52 +1,53 @@
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Web_Site_One</title>
+	<title>Web_One</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="SHORTCUT ICON" href="img/mac.png" type="image/x-icon">
 </head>
 <body>
 	<header>
 		<div class="header__logo"><p>MyCompany</p></div>
 		<nav>
 			<div class="topnaw">
-			<a href="#">home</a>
-			<a href="#">about</a>
-			<a href="#">services</a>
-			<a href="#">portfolio</a>
-			<a href="#">testimonials</a>
-			<a href="#">contact</a>
+			<a href="#main__welcome">home</a>
+			<a href="#main__about">about</a>
+			<a href="#main__services">services</a>
+			<a href="#main__work">portfolio</a>
+			<a href="#main__testimonials">testimonials</a>
+			<a href="#main__contact">contact</a>
 			<a href="#" id="menu" class="icon">&#9776;</a>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<div class="main__welcome">
-			<h1>WELCOME ON <span class="mycompany">mycompany</span></h1>
+		<div class="main__welcome" id="main__welcome">
+			<h1>WELCOME ON <span class="mycompany">MYCOMPANY</span></h1>
 			<p class="mycompany_p">We are a digital agency with 
 			<span class="mycompany_s">years of experience</span> and with 
 			<span class="mycompany_s">extraordinary people</span></p>
 		</div>
 		<div class="wrapper">
-			<div class="main__about">
+			<div class="main__about" id="main__about">
 				<div class="about__left">
 					<img class="mw-100" src="img/mac.png" alt="mac">
 				</div>
 				<div class="about__right">
-					<h1>Some words <span>about us</span></h1>
+					<h1><span>Some words</span> about us</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus.</p>
 					<ul>
-						<li><span>Mission -</span> We deliver uniqueness and quality</li>
-						<li><span>Skills -</span> Delivering fast and excellent results</li>
-						<li><span>Clients -</span> Satisfied clients thanks to our experience</li>
+						<li><span>Mission - </span><i>We deliver uniqueness and quality</i></li>
+						<li><span>Skills - </span><i> Delivering fast and excellent results</i></li>
+						<li><span>Clients - </span><i> Satisfied clients thanks to our experience</i></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="main__team">
+		<div class="main__team" id="main__team">
 			<div class="wrapper">
 				<h1>our team</h1>
 				<div class="team__card">
@@ -77,7 +78,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="main__services">
+		<div class="main__services" id="main__services">
 			<div class="wrapper">
 				<h1>our services</h1>
 				<p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</i></p>
@@ -107,7 +108,7 @@
 		</div>
 		<div class="main__clients">
 			<div class="wrapper">
-				<h1>SOME OF OUR CLIENTS</h1>
+				<h1><span>SOME OF</span> OUR CLIENTS</h1>
 				<div class="clients">
 					<img src="img/chanel.png" alt="chanel">
 					<img src="img/zara.png" alt="zara">
@@ -117,9 +118,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="main__work">
+		<div class="main__work" id="main__work">
 			<div class="wrapper">
-				<h1>take a look at our work</h1>
+				<h1><span>take a look at</span> our work</h1>
 				<p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.</i></p>
 				<div class="gallery">
 					<div class="line1">
@@ -143,21 +144,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="main__testimonials">
+		<div class="main__testimonials" id="main__testimonials">
 			<div class="wrapper">
-				<h1>our clients’ testimonials</h1>
+				<h1>our clients’ <span>testimonials</span></h1>
 				<p class="testimonials_p1">This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
 				<p class="testimonials_p2">Dean Martin, CEO Acme Inc.</p>
 			</div>
 		</div>
-		<div class="main__contact">
+		<div class="main__contact" id="main__contact">
 			<div class="contact_wrapper">
 				<h1>contact us</h1>
 				<p class="pcontent"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</i></p>
 				<form action="#" name="contact" method="POST">
 					<div class="form_inputs">
-						<p>Name <span class="red">*</span><input type="text"></p>
-						<p>Email address <span class="red">*</span><input type="text"></p>
+						<div class="inputp">
+							<p>Name <span class="red">*</span><input type="text"></p>
+						</div>
+						<div class="inputp">
+							<p>Email address <span class="red">*</span><input type="text"></p>
+						</div>
 					</div>
 					<p>Message <span class="red">*</span></p>
 					<textarea name="text"></textarea>
@@ -170,6 +175,8 @@
 	</main>
 	<footer>
 		<div class="social">
+			<a target="_blank" href="https://www.instagram.com/nikolay_vasnetsov/"><i class="fab fa-instagram"></i></a>
+			<a target="_blank" href="https://vk.com/id514300531"><i class="fab fa-vk"></i></a>
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/script.js"></script>

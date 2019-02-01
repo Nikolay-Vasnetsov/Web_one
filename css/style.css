@@ -13,20 +13,21 @@ main {
 	width: 100%;
 }
 
-main .main__welcome {
+.main__welcome {
 	background: #000;
 	text-align: center;
 	padding: 200px 0 480px 0px;
 	color: #fff;
 }
 
-.mycompany {
-	color: #fcac45;
-	text-transform: uppercase;
-}
-
 .main__welcome h1 {
 	color: #999999;
+	font-weight: 400;	
+}
+
+.mycompany {
+	color: #fcac45;
+	font-weight: bold;
 }
 
 .mycompany_s {
@@ -85,7 +86,7 @@ nav {
 	margin: 0 auto;
 }
 
-main .main__about{
+.main__about{
 	display: flex;
 	padding: 100px 0 100px 0;
 }
@@ -97,11 +98,12 @@ main .main__about{
 .about__right h1 {
 	display: inline-block;
 	border-bottom: 3px solid #fcac45;
-	padding-bottom: 10px; 
+	padding-bottom: 10px;
+	text-transform: uppercase;
 }
 
 .about__right h1 span {
-	font-weight: bold;
+	font-weight: 300;
 }
 
 .about__right p {
@@ -116,6 +118,7 @@ main .main__about{
 	background: url(../img/icon1.png) 0px no-repeat;
 	padding-left: 25px;
 	margin-top: 10px;
+	color: #6c6c6c;
 }
 
 .main__team {
@@ -126,7 +129,6 @@ main .main__about{
 }
 
 .main__team h1 {
-	font-size: 44px;
 	padding-bottom: 30px;
 	text-transform: uppercase;
 }
@@ -199,8 +201,11 @@ h1:after {
 
 .main__services p {
 	text-align: center;
-	color: #6c6c6c;
 	margin-bottom: 100px;
+}
+
+.main__services p i {
+	color: #6c6c6c;
 }
 
 .services_row h4 {
@@ -228,6 +233,10 @@ h1:after {
 	margin-top: 10px;
 }
 
+.main__clients h1 span {
+	font-weight: 300;	
+}
+
 .main__testimonials {
 	padding: 100px 0 175px 0;
 	background: #000;
@@ -238,6 +247,10 @@ h1:after {
 .main__testimonials h1 {
 	text-transform: uppercase;
 	margin-bottom: 25px;
+}
+
+.main__testimonials h1 span {
+	font-weight: 300;
 }
 
 .testimonials_p1 {
@@ -257,6 +270,10 @@ h1:after {
 .main__work h1 {
 	margin-bottom: 25px;
 	text-transform: uppercase;
+}
+
+.main__work h1 span {
+	font-weight: 300;
 }
 
 .main__work p {
@@ -338,9 +355,20 @@ form {
 	margin-top: 80px;
 }
 
-footer {
-	height: 92px;
+.fab {
+	font-size: 2.5em;
+	color: #979797;
+	margin-left: 15px;
+}
+
+.fab:hover {
+	opacity: .3;
+}
+
+.social {
+	padding: 25px 0 25px 0;
 	background: #222222;
+	text-align: center;
 }
 
 @media screen and (max-width: 1366px) {
@@ -355,6 +383,9 @@ footer {
 	}
 	.line2 img {
 		margin: 10px 0 10px 0;
+	}
+	.about__right h1 {
+		font-size: 1.7em;
 	}
 }
 
@@ -451,5 +482,14 @@ footer {
 	}
 	.line3 img:not(:first-child) {
 		display: none;
+	}
+	.contact_wrapper {
+		width: 76%;
+	}
+	.form_inputs {
+		display: block;
+	}
+	.inputp input {
+		width: 100%;
 	}
 }
